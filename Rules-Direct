@@ -1,0 +1,4 @@
+# Emby
+PROCESS-NAME,/Applications/Emby.app/Contents/MacOS/Emby
+DOMAIN-KEYWORD,emby
+URL-REGEX,emby
