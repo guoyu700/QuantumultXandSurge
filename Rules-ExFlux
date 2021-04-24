@@ -8,4 +8,4 @@ DOMAIN,news-events.apple.com
 DOMAIN,news-edge.apple.com
 PROCESS-NAME,News
 # Epic
-HOST, rsshub.app
+DOMAIN,rsshub.app
