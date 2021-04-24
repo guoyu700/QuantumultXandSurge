@@ -1,2 +1,12 @@
 # Downie
 USER-AGENT,Downie*
+# Apple News
+DOMAIN,gateway.icloud.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN,apple.comscoreresearch.com
+DOMAIN,news-client.apple.com
+DOMAIN,news-events.apple.com
+DOMAIN,news-edge.apple.com
+#Epic
+HOST, rsshub.app
