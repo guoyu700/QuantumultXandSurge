@@ -7,5 +7,5 @@ DOMAIN,news-client.apple.com
 DOMAIN,news-events.apple.com
 DOMAIN,news-edge.apple.com
 PROCESS-NAME,News
-#Epic
+# Epic
 HOST, rsshub.app
