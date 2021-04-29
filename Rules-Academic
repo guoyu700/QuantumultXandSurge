@@ -1,6 +1,7 @@
 DOMAIN,api.zotero.org
 DOMAIN,gate.hockeyapp.net
 DOMAIN,scholar.google.com
+DOMAIN-KEYWORD,www.google.,GoogleSearch
 DOMAIN-SUFFIX,aclweb.org
 DOMAIN-SUFFIX,acm.org
 DOMAIN-SUFFIX,acs.org
