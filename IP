@@ -43,5 +43,5 @@ var obj = JSON.parse(body);
 var title = '「'+ City_ValidCheck(obj['state_prov'])+"」";//+Area_check(obj['country_name']);
 var subtitle =  ""+  ISP_ValidCheck(obj['isp']).toUpperCase() + " ™"+ " ➠ "+ obj['country_name'];
 var ip = obj['ip']; 
-var description = 'Carrier:'+obj['isp'] + '\n'+'Location: [' +obj["latitude"]+","+obj["longitude"]+"]"+ '\n' + 'IP:'+ obj['ip'] + '\n' +'Timezone:'+ obj['timezone'];
+var description = 'Carrier:'+obj['isp'] + '\n' + 'Location: [' +obj["latitude"]+","+obj["longitude"]+"]"+ '\n' + 'IP:'+ obj['ip'] + '\n' +'Timezone:'+ obj['timezone'];
 $done({title, subtitle, ip, description});
