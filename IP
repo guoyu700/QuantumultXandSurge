@@ -7,7 +7,7 @@ var obj = JSON.parse(body);
 var title = obj['country_name'];
 var subtitle = obj['city'] + ' ' + obj['isp'];
 var ip = obj['ip'];
-var description = "Country" + ":" + obj['country_name'] + '\n' + "City" + ":" + obj['city'] + '\n' + "Carrier" + ":" + obj['isp'] + '\n' + "Data Center" + ":" + obj['organization'];
+var description = title + '-' + obj['city'] + '\n' + obj['isp'] + '\n' + ip;
 
 
 $done({title, subtitle, ip, description});
