@@ -1,3 +1,4 @@
+//https://api.ipgeolocation.io/ipgeo?apiKey=90a5828d76324ef89b4e4a60fa7a3abd
 if ($response.statusCode != 200) {
   $done(null);
 }
@@ -40,8 +41,8 @@ function Area_check(para) {
 
 var body = $response.body;
 var obj = JSON.parse(body);
-var title = '「'+ Area_check(obj['country_name'])+"」";
+var title = "「"+ Area_check(obj['country_name'])+"」";
 var subtitle =  ""+  ISP_ValidCheck(obj['isp']).toUpperCase() + "™";
 var ip = obj['ip'];
-var description = 'Carrier:'+obj['isp'] + '\n' + 'Location: [' +obj["latitude"]+","+obj["longitude"]+"]"+ '\n' + 'IP:'+ obj['ip'];
+var description = "Carrier:" +obj['isp'] + '\n' + "Location:" +obj['latitude']+","+obj['longitude']+ '\n' + "IP:" + obj['ip'];
 $done({title, subtitle, ip, description});
