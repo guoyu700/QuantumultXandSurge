@@ -1,7 +1,7 @@
 //https://api.ipgeolocation.io/ipgeo?apiKey=90a5828d76324ef89b4e4a60fa7a3abd
-//if ($response.statusCode != 200) {
-//  $done(null);
-//}
+if ($response.statusCode != 200) {
+  $done(null);
+}
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
 var city0 = "高谭市";
