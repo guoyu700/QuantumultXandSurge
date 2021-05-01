@@ -42,7 +42,7 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
 var body = $response.body;
 var obj = JSON.parse(body);
 var ip = obj['ip'];
-var title =flags.get(obj['country']) + ' '+ City_ValidCheck(obj['city']);//+ Area_check(obj['country']);
+var title = flags.get(obj['country']) + ' ' + '「'+ City_ValidCheck(obj['city'])+ '-' + Area_check(obj['country']) + '」';
 var subtitle = ISP_ValidCheck(obj['org']);
 var description = 'Region: ' +City_ValidCheck(obj['region'])+ '\n' + 'IP: '+ obj['ip'] + '\n' + 'Timezone: ' + obj['timezone'];
 $done({title, subtitle, ip, description});
