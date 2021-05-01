@@ -3,10 +3,10 @@ if ($response.statusCode != 200) {
 }
 
 var body = $response.body;
-var obj = JSON.parse(body);
-var ip = obj['ip'];
-var title = obj['country_name'];
+var obj = JSON.parse(body)['data'];
+var ip = obj['addr'];
+var title = obj['country'];
 var subtitle = obj['city'] + ' ' + obj['isp'];
-var description = "Country" + ":" + obj['country_name'] + '\n' + "City" + ":" + obj['city'] + '\n' + "Carrier" + ":" + obj['isp'] + '\n' + "Organization" + ":" + obj['organization'];
+var description = "Country" + ":" + obj['country'] + '\n' + "City" + ":" + obj['city'] + '\n' + "Carrier" + ":" + obj['isp'];
 
 $done({title, subtitle, ip, description});
