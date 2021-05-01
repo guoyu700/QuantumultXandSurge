@@ -1,4 +1,4 @@
-//https://api.ipgeolocation.io/ipgeo?apiKey=90a5828d76324ef89b4e4a60fa7a3abd
+//http://ipinfo.io/?token=7f901a081f39d4
 if ($response.statusCode != 200) {
   $done(Null);
 }
@@ -42,7 +42,7 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
 var body = $response.body;
 var obj = JSON.parse(body);
 var ip = obj['ip'];
-var title = flags.get(obj['country']) + ' ' + '「'+ City_ValidCheck(obj['city'])+ '-' + Area_check(obj['country']) + '」';
+var title = flags.get(obj['country']) + ' ' + "「"+ City_ValidCheck(obj['city'])+ '-' + Area_check(obj['country']) + "」";
 var subtitle = ISP_ValidCheck(obj['org']);
 var description = 'Region: ' +City_ValidCheck(obj['region'])+ '\n' + 'IP: '+ obj['ip'] + '\n' + 'Timezone: ' + obj['timezone'];
 $done({title, subtitle, ip, description});
